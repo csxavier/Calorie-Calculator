@@ -4,27 +4,35 @@ You can use the [editor on GitHub](https://github.com/csxavier/Calorie-Calculato
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Welcome !!!
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+                               
 
-```markdown
-Syntax highlighted code block
+[Source Daily Calorie Needs](https://www.aqua-calc.com/calculate/daily-calorie-needs)
 
-# Header 1
-## Header 2
-### Header 3
+ 
 
-- Bulleted
-- List
+For **Men**: `66 + (6.2 x weight) + (12.7 x height) – (6.76 x age)`
 
-1. Numbered
-2. List
+ 
 
-**Bold** and _Italic_ and `Code` text
+For **WoMen**: `655.1 + (4.35 x weight) + (4.7 x height) – (4.7 x age)`                  
 
-[Link](url) and ![Image](src)
-```
+ 
+
+### Points for activity levels are as follows:                         
+
+* For a person who does little to no exercise) = 1.2
+
+* For a slightly active person who does light exercise 1–3 days a week =  1.37
+
+* For a moderately active person who performs moderate exercise 3–5 days a week = 1.55
+
+* For a very active person who exercises hard 6–7 days a week = 1.725
+
+* For an extra active person who either has a physically demanding job or has a particularly challenging exercise routine = 1.9
+
+ 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
