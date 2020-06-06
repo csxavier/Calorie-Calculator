@@ -2,10 +2,10 @@
 <html>
 	<body>
 		Welcome <?php 
-			$gender = $_POST["Gender"];
+			$gender = $_GET["Gender"];
 		echo $Gender;
 		?>
 		<br>
-		Your email address is: <?php echo $_POST["activity"]; ?>
+		Your email address is: <?php echo $_GET["activity"]; ?>
 </body>
 </html>
