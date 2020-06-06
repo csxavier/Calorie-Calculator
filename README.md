@@ -1,4 +1,4 @@
-`/.github/FUNDING.yml`
+[onate](./github/FUNDING.yml)
 
 ## Welcome to GitHub Pages
 
