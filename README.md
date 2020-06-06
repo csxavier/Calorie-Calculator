@@ -1,4 +1,4 @@
-[onate](./github/FUNDING.yml)
+[Donate](https://paypal.me/7875555711)
 
 ## Welcome to GitHub Pages
 
