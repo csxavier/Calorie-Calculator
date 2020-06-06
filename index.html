@@ -1,218 +1,88 @@
 
 <!DOCTYPE html>
-
 <html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calorie-Calculator by csxavier</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+	</head>
+	<body>
+		<section class="page-header">
+			<h1 class="project-name">Calorie-Calculator</h1>
+			<h2 class="project-tagline">Calculate Daily Calorie Needs</h2>
+			<a href="https://github.com/csxavier/Calorie-Calculator" class="btn">View on GitHub</a>
+		</section>
+		
+		<form action="welcome.php" method="post">
+			<h5> Select Male or FeMale <label for="Gender"Select Gender:</label>
+				<select name="Gender" id="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+			<h5>Enter Activity Level <label for="Activity"Select Activity Level:</label>
+				<select name="Activity" id="activity">
+					<option value="1.2">1.2</option>
+					<option value="1.37">1.37</option>
+					<option value="1.55">1.55</option>
+					<option value="1.725">1.725</option>
+					<option value="1.9">1.9</option>
+				</select>
+			</h5>
+			<h5>Enter Weight <input type="number" id="weight" value="170"> </h5>
+			<h5>Enter Height <input type="number" id="height" value="70"> </h5>
+			<h5>Enter Age <input type="number" id="age" value="37"></h5>
+			<h3><input type="submit"></h3>
+		</form>
 
-  <head>
-
-    <meta charset="UTF-8">
-
-<title>Calorie-Calculator by csxavier</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-
-  </head>
-
-  <body>
-
-    <section class="page-header">
-
-      <h1 class="project-name">Calorie-Calculator</h1>
-
-      <h2 class="project-tagline">Calculate Daily Calorie Needs</h2>
-
-      <a href="https://github.com/csxavier/Calorie-Calculator" class="btn">View on GitHub</a>
-
-    </section>
-
+<?php
+Echo "Select Men or WoMen"
  
-
-    <section class="main-content">
-
-      <h1>
-
-<a id="welcome-" class="anchor" href="#welcome-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome !!!</h1>
-
-<p><a href="https://www.aqua-calc.com/calculate/daily-calorie-needs">Source Daily Calorie Needs</a></p>
-
- 
-
-<br><br>
-
- 
-
-<h3>
-
-<a id="points-for-activity-levels-are-as-follows" class="anchor" href="#points-for-activity-levels-are-as-follows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Points for activity levels are as follows:</h3>
-
-<table border="1">
-
-<thead>
-
-<tr>
-
-<th>Activity Levels</th>
-
-<th>Points</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>For a person who does little to no exercise)</td>
-
-<td>1.2</td>
-
-</tr>
-
-<tr>
-
-<td>For a slightly active person who does light exercise 1–3 days a week</td>
-
-<td>1.37</td>
-
-</tr>
-
-<tr>
-
-<td>For a moderately active person who performs moderate exercise 3–5 days a week</td>
-
-<td>1.55</td>
-
-</tr>
-
-<tr>
-
-<td>For a very active person who exercises hard 6–7 days a week</td>
-
-<td>1.725</td>
-
-</tr>
-
-<tr>
-
-<td>For an extra active person who either has a physically demanding job or has a particularly challenging exercise routine</td>
-
-<td>1.9</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<br><br>
-
- 
-
-<head>   <title>Divide Tab </title> <style> body, html { 
-
-width: 100%;   height: 100%;   margin: 0; }
-
-.container {   width: 100%;   height: 100%; }
-
-.leftpane {
-
-    width: 50%;
-
-    height: 100%;
-
-    float: left;
-
-    background-color: blue;
-
-    border-collapse: collapse;
-
-     text-align: left; }
-
-.rightpane {   width: 50%;   height: 100%;   position: relative; 
-
-float: right;   background-color: pink;   border-collapse:
-
-collapse;    text-align: left; }
-
-</style>
-
- 
-
-</head> <body>  <div class="container">  
-
-<div class="leftpane">
-
-    <p>For <strong>Men</strong>: <code>66 + (6.2 x weight) + (12.7 x height) – (6.76 x age)</code></p>
-
-<form oninput="x.value=(parseFloat(activity.value)*(66+((parseInt(weight.value)*6.2)+(parseInt(height.value)*12.7)-(parseInt(age.value)*6.76))))">
-
-<h5>Enter Activity Level <input type="float" id="activity" value="1.55"> </h5>
-
-<h5>Enter Weight <input type="number" id="weight" value="170"> </h5>
-
-<h5>Enter Height <input type="number" id="height" value="70"> </h5>
-
-<h5>Enter Age <input type="number" id="age" value="37"></h5>
-
-<h2>Calculate Daily Calorie Needs for Men = <output name="x" for="age weight height activity"></output> </h2>
-
-</form>
-
-</div>
-
- 
-
-<div class="rightpane">
-
-<p>For <strong>WoMen</strong>: <code>655.1 + (4.35 x weight) + (4.7 x height) – (4.7 x age)</code></p>
-
-    <form oninput="x.value=(parseFloat(activity.value)*(655.1+((parseInt(weight.value)*4.35)+(parseInt(height.value)*4.7)-(parseInt(age.value)*4.7))))">
-
-<h5>Enter Activity Level <input type="float" id="activity" value="1.55"> </h5>
-
-<h5>Enter Weight <input type="number" id="weight" value="170"> </h5>
-
-<h5>Enter Height <input type="number" id="height" value="70"> </h5>
-
-<h5>Enter Age <input type="number" id="age" value="37"></h5>
-
-<h2>Calculate Daily Calorie Needs for WoMen = <output name="x" for="age weight height activity"></output> </h2>
-
-</form></div> </div>
-
-</body>
-
-<br><br><br><br>
-
-      <footer class="site-footer">
-
-        <span class="site-footer-owner"><a href="https://github.com/csxavier/Calorie-Calculator/">Calorie-Calculator</a> is maintained by <a href="https://github.com/csxavier">csxavier</a>.</span>
-
- 
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-
-      </footer>
-
- 
-
-    </section>
-
- 
-
- 
-
-  </body>
-
+?>
+
+		<section class="page-footer"> <body>
+			<br><br><br><br>
+			<h3>Points for activity levels are as follows:</h3>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Activity Levels</th>
+						<th>Points</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>For a person who does little to no exercise)</td>
+						<td>1.2</td>
+					</tr>
+					<tr>
+						<td>For a slightly active person who does light exercise 1–3 days a week</td>
+						<td>1.37</td>
+					</tr>
+					<tr>
+						<td>For a moderately active person who performs moderate exercise 3–5 days a week</td>
+						<td>1.55</td>
+					</tr>
+					<tr>
+						<td>For a very active person who exercises hard 6–7 days a week</td>
+						<td>1.725</td>
+					</tr>
+					<tr>
+						<td>For an extra active person who either has a physically demanding job or has a particularly challenging exercise routine</td>
+						<td>1.9</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<footer class="site-footer">
+				<h1> Sources !!! </h1>
+				<p><a href="https://www.aqua-calc.com/calculate/daily-calorie-needs">Source Daily Calorie Needs</a></p>
+				
+				<span class="site-footer-owner"><a href="https://github.com/csxavier/Calorie-Calculator/">Calorie-Calculator</a> is maintained by <a href="https://github.com/csxavier">csxavier</a>.</span>
+				<span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages.</a></span>
+				<br><br><br><br>
+			</footer>
+		</body> </section>
+		
+	</body>
 </html>
-
-
