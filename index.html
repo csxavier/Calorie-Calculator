@@ -22,49 +22,52 @@
 									width: 50%;
 									height: 100%;
 									float: left;
-									background-color: blue;
+									background-color: #00c0ff;
 									border-collapse: collapse;
 									text-align: left; }
 								.rightpane {   width: 50%;	 height: 100%;	 position: relative; 
-									float: right;	background-color: pink;	  border-collapse:
+									float: right;	background-color: #ec45cb;	  border-collapse:
 								collapse;	text-align: left; }
 					</style>
 			</head>
 			<body>	<div class="container">	 
 				<div class="leftpane">
-					<p>For <strong>Men</strong>: <code>66 + (6.2 x weight) + (12.7 x height) – (6.76 x age)</code></p>
+					<p style="text-align:center;">For <strong>Men</strong>: <code>66 + (6.2 x weight) + (12.7 x height) – (6.76 x age)</code></p>
 					<form oninput="x.value=(parseFloat(activity.value)*(66+((parseInt(weight.value)*6.2)+(parseInt(height.value)*12.7)-(parseInt(age.value)*6.76))))">
 						<h5>Enter Activity Level <label for="Activity" Select Activity Level:</label>
 							<select name="Activity" id="activity">
-								<option value="">--See Table Below--</option>
+								<option value="">--Please select from below--</option>
 								<option value="1.2">1.2</option>
 								<option value="1.37">1.37</option>
 								<option value="1.55">1.55</option>
 								<option value="1.725">1.725</option>
 								<option value="1.9">1.9</option>
 							</select>
+							(See Table Below)
 						</h5>
-						<h5>Enter Weight <input type="number" placeholder="In Pounds" id="weight" value="170"> </h5>
-						<h5>Enter Height <input type="number" placeholder="in cms" id="height" value="165"> </h5>
-						<h5>Enter Age <input type="number" placeholder="In Years" id="age" value="30"></h5>
+						<h5>Enter Weight <input type="number" placeholder="In Pounds" id="weight" value="170"> (in Pounds) </h5>
+						<h5>Enter Height <input type="number" placeholder="in cms" id="height" value="165"> (in cms) </h5>
+						<h5>Enter Age <input type="number" placeholder="In Years" id="age" value="30"> (in Years) </h5>
 						<h2>Calculate Daily Calorie Needs for Men = <output name="x" for="age weight height activity"></output> </h2>
 					</form>
 				</div>
 				<div class="rightpane">
-					<p>For <strong>WoMen</strong>: <code>655.1 + (4.35 x weight) + (4.7 x height) – (4.7 x age)</code></p>
+					<p style="text-align:center;">For <strong>Women</strong>: <code>655.1 + (4.35 x weight) + (4.7 x height) – (4.7 x age)</code></p>
 					<form oninput="x.value=(parseFloat(activity.value)*(655.1+((parseInt(weight.value)*4.35)+(parseInt(height.value)*4.7)-(parseInt(age.value)*4.7))))">
-						<h5>Enter Activity Level <label for="Activity"Select Activity Level:</label>
+						<h5>Enter Activity Level <label for="Activity" Select Activity Level:</label>
 							<select name="Activity" id="activity">
+								<option value="">--Please select from below--</option>
 								<option value="1.2">1.2</option>
 								<option value="1.37">1.37</option>
 								<option value="1.55">1.55</option>
 								<option value="1.725">1.725</option>
 								<option value="1.9">1.9</option>
 							</select>
+							(See Table Below)
 						</h5>
-						<h5>Enter Weight <input type="number" id="weight" value="170"> </h5>
-						<h5>Enter Height <input type="number" id="height" value="70"> </h5>
-						<h5>Enter Age <input type="number" id="age" value="37"></h5>
+						<h5>Enter Weight <input type="number" placeholder="In Pounds" id="weight" value="170"> (in Pounds) </h5>
+						<h5>Enter Height <input type="number" placeholder="in cms" id="height" value="165"> (in cms) </h5>
+						<h5>Enter Age <input type="number" placeholder="In Years" id="age" value="30"> (in Years) </h5>
 						<h2>Calculate Daily Calorie Needs for WoMen = <output name="x" for="age weight height activity"></output> </h2>
 					</form>
 				</div>
